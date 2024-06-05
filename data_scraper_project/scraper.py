@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import sqlite3
 
 def check_aurora():
-    # Replace {city} and {api_key} with your desired city and OpenWeatherMap API key
+    # city and api_key 
     url = "http://api.openweathermap.org/data/2.5/weather?q={Minneapolis}&appid={c8aee7a2475d74d22638d3080c2b681e}"
     response = requests.get(url)
     data = response.json()
